@@ -2,10 +2,6 @@ const { Vlad, Responder, Interaction } = require('./structures');
 const { Constants: {INTENTS}} = require('./util');
 
 const config = require('../app.config');
-
-const client = new Vlad(config.token, {
-	prefix: config.prefix,
-	intents: [
 		INTENTS.GUILD_MESSAGES,
 		INTENTS.GUILD_MEMBERS,
 		INTENTS.GUILD_INTEGRATIONS,
